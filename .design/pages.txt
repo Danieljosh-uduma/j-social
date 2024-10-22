@@ -1,0 +1,16 @@
+PAGES                   -------         OBJECTIVES
+Login page
+sign up page
+onboarding page
+home page
+chat page
+group page
+community page
+profile page
+friends-list page
+add-friend page
+notification page
+delete-post page
+add-post page
+reset-password page
+email confirmation page
