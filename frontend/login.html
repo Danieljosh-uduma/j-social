@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style type="text/tailwindcss">
+        h1 , h2{
+            font-family: "Playwrite GB S", cursive;;
+        }
+        form>div>input {
+            @apply w-full h-14 px-4 rounded-2xl bg-[rgba(0,0,0,0.05)] border-2 border-solid border-white placeholder:text-gray-400 focus:border-blue-400 outline-none text-blue-400 mb-4
+        }
+        @media (min-width: 800px) {
+            body {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="dark:bg-black bg-white dark:text-white">
+    
+    
+    <div class="mt-[40%]">
+        <h2 class="w-36 text-white text-center text-2xl bg-gradient-to-r from-blue-500 to-pink-500 capitalize mb-10 font-bold px-4 py-2 mx-auto rounded-lg">login</h2>
+
+        <form action="" class="w-[90%] h-auto py-2 mx-auto">
+            <div>
+                <input type="text" placeholder="Username"id='name'>
+            </div>
+            <div>
+                <input type="password" name="" id="" placeholder="Password">
+            </div>
+            <button class="block w-24 mx-auto py-2 font-bold text-sm rounded-lg bg-pink-500 text-white" type="submit">Login</button>
+        </form>
+
+        <a class="flex items-center w-[80%] mx-auto bg-blue-200 dark:bg-blue-400 gap-6 rounded-lg mt-6" href="">
+            <div class="w-12 h-12 bg-gray-200 dark:bg-white py-1 rounded-lg">
+                <img class="w-10 h-10 mx-auto " src="https://img.icons8.com/3d-fluency/94/google-logo.png" alt="google-logo"/>
+            </div>
+            <p class="font-bold dark:text-white text-gray-700 text-center">Log in with Google</p>
+        </a>
+
+        <p class="text-center w-full mt-6">Don't have an account? <a href="./sigup.html" class="text-blue-500">Sign up</a></p>
+    </div>
+</body>
+</html>
